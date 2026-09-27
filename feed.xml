@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pawan Thiruverkadu · Writing</title>
+    <link>https://pawanthiruverkadu.com/writing.html</link>
+    <atom:link href="https://pawanthiruverkadu.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Analysis of the services industry and energy markets by Pawan Thiruverkadu, applying the quantitative toolkit of energy economics.</description>
+    <language>en-us</language>
+    <item>
+      <title>The Dynamic Impact of Feed-in-Tariffs on Solar Capacity</title>
+      <link>https://pawanthiruverkadu.com/writing/feed-in-tariffs-solar-capacity.html</link>
+      <guid isPermaLink="true">https://pawanthiruverkadu.com/writing/feed-in-tariffs-solar-capacity.html</guid>
+      <pubDate>Mon, 01 Dec 2025 12:00:00 +0000</pubDate>
+      <description>Did China’s 2013 solar subsidies actually move investment, and how fast? A dynamic spatial regression discontinuity study along the Shanxi, Shaanxi, and Inner Mongolia border.</description>
+    </item>
+    <item>
+      <title>The Economics of the U.S. Cattle Industry</title>
+      <link>https://pawanthiruverkadu.com/writing/cattle-industry-economics.html</link>
+      <guid isPermaLink="true">https://pawanthiruverkadu.com/writing/cattle-industry-economics.html</guid>
+      <pubDate>Fri, 05 May 2023 12:00:00 +0000</pubDate>
+      <description>A group report from my first year at Texas A&amp;M, following cattle from ranch to retail through demand, supply, macroeconomics, trade, and environmental costs.</description>
+    </item>
+  </channel>
+</rss>

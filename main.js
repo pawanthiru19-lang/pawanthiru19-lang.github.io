@@ -14,7 +14,7 @@ if (header) {
 // Scroll reveals. Single blocks rise in; groups rise in with a short stagger.
 // Each fires once — re-animating on every scroll-by fights the reader.
 const singles = document.querySelectorAll(
-  '.path__title, .section__title, .page-head__note, .jump, .roles > .role, .research-list > .role'
+  '.path__title, .section__title, .page-head__note, .jump, .roles > .role, .research-list > .role, .posts > li, .posts-empty, .post__head, .prose'
 );
 const groups = document.querySelectorAll('.strengths, .path__list, .footer__inner');
 

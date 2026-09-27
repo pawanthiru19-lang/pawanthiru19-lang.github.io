@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Dynamic Impact of Feed-in-Tariffs on Solar Capacity: Evidence from the Chinese Border · Pawan Thiruverkadu</title>
+  <meta name="description" content="Did China’s 2013 solar subsidies actually move investment, and how fast? A dynamic spatial regression discontinuity study along the Shanxi, Shaanxi, and Inner Mongolia border.">
+  <meta name="theme-color" content="#e8efe5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#141c17" media="(prefers-color-scheme: dark)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta name="keywords" content="Energy policy, Econometrics, Rice University">
+  <meta name="list-title" content="The Dynamic Impact of Feed-in-Tariffs on Solar Capacity">
+  <link rel="stylesheet" href="../styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <!-- seo:start -->
+  <link rel="canonical" href="https://pawanthiruverkadu.com/writing/feed-in-tariffs-solar-capacity.html">
+  <meta name="author" content="Pawan Thiruverkadu">
+  <meta property="og:site_name" content="Pawan Thiruverkadu">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://pawanthiruverkadu.com/writing/feed-in-tariffs-solar-capacity.html">
+  <meta property="og:title" content="The Dynamic Impact of Feed-in-Tariffs on Solar Capacity: Evidence from the Chinese Border">
+  <meta property="og:description" content="Did China’s 2013 solar subsidies actually move investment, and how fast? A dynamic spatial regression discontinuity study along the Shanxi, Shaanxi, and Inner Mongolia border.">
+  <meta property="og:image" content="https://pawanthiruverkadu.com/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Dynamic Impact of Feed-in-Tariffs on Solar Capacity: Evidence from the Chinese Border">
+  <meta name="twitter:description" content="Did China’s 2013 solar subsidies actually move investment, and how fast? A dynamic spatial regression discontinuity study along the Shanxi, Shaanxi, and Inner Mongolia border.">
+  <meta name="twitter:image" content="https://pawanthiruverkadu.com/assets/og-image.png">
+  <link rel="alternate" type="application/rss+xml" title="Pawan Thiruverkadu · Writing" href="https://pawanthiruverkadu.com/feed.xml">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "headline": "The Dynamic Impact of Feed-in-Tariffs on Solar Capacity: Evidence from the Chinese Border", "description": "Did China’s 2013 solar subsidies actually move investment, and how fast? A dynamic spatial regression discontinuity study along the Shanxi, Shaanxi, and Inner Mongolia border.", "datePublished": "2025-12-01", "author": {"@id": "https://pawanthiruverkadu.com/#person", "@type": "Person", "name": "Pawan Thiruverkadu", "url": "https://pawanthiruverkadu.com/"}, "mainEntityOfPage": "https://pawanthiruverkadu.com/writing/feed-in-tariffs-solar-capacity.html", "image": "https://pawanthiruverkadu.com/assets/og-image.png", "keywords": ["Energy policy", "Econometrics", "Rice University"]}</script>
+  <!-- seo:end -->
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="wordmark" href="../" aria-label="Pawan Thiruverkadu, home"><span class="wordmark__mark" aria-hidden="true">PT</span><span class="wordmark__name">Pawan Thiruverkadu</span></a>
+    <nav aria-label="Sections">
+      <ul class="nav">
+        <li><a class="nav__item nav__link" href="../professional.html">My Experience</a></li>
+        <li><a class="nav__item nav__link" href="../academic.html">Academic</a></li>
+        <li><a class="nav__item nav__link" href="../writing.html" aria-current="page">Writing</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="post">
+    <header class="post__head">
+      <a class="post__back" href="../writing.html"><span aria-hidden="true">←</span> All writing</a>
+      <p class="post__meta"><time datetime="2025-12">December 2025</time><span class="post__readtime" data-readtime> · 3 min read</span></p>
+      <h1 class="post__title">The Dynamic Impact of Feed-in-Tariffs on Solar Capacity: Evidence from the Chinese Border</h1>
+      <p class="post__dek">Did China’s 2013 solar subsidies actually move investment, and how fast? A dynamic spatial regression discontinuity study along the Shanxi, Shaanxi, and Inner Mongolia border.</p>
+    </header>
+
+    <article class="prose" id="post-body" data-prerendered>
+<p><em>Graduate paper, Rice University Department of Economics. Co-authored with Kanwal Deep Singh and Ty Hampton, under Dr. Tilsa G. Ore Monago.</em></p>
+<h2>Abstract</h2>
+<p>This study utilizes a Dynamic Spatial Regression Discontinuity Design (RDD) to evaluate the effectiveness of China’s 2013 Feed-in-Tariff (FIT) policy. Using a balanced panel of 426 county-year observations along the border of Shanxi, Shaanxi, and Inner Mongolia, we exploit the sharp discontinuity in subsidy rates between Zone I and Zone III. Our results confirm that the policy successfully incentivized investment, with the subsidized zone gaining an additional 68.35&nbsp;MW of capacity relative to the control group by 2016. However, the dynamic specification reveals a significant "implementation lag," with no statistical effect observed in the first three years (2013–2015). Furthermore, we find that financial incentives effectively overrode natural disadvantages, as the subsidized zone attracted massive investment despite possessing significantly lower solar radiation levels.</p>
+<h2>Research design</h2>
+<p>China’s 2013 Feed-in-Tariff paid different subsidy rates by zone. Where Zone I meets the higher-subsidy Zone III, neighboring counties faced a sharp jump in incentives, a natural experiment. We used a balanced panel of county-level data from 2011 to 2016 (two years before the policy, four after) and interacted the treatment with year dummies to trace the effect year by year, rather than estimating one static average:</p>
+<p><span class="math math--display" data-tex="
+\begin{aligned}
+\text{Solar}_{it} = {} &amp; \beta_0 + \beta_1 \text{South}_i + \sum_{t \neq 2012} \delta_t \,(\text{South}_i \times \text{Year}_t) \\
+&amp; + \beta_2 \text{Dist}_i + \beta_3 (\text{Dist}_i \times \text{South}_i) + X_{it}\gamma + \alpha_b + \lambda_t + \epsilon_{it}
+\end{aligned}
+">$$
+\begin{aligned}
+\text{Solar}_{it} = {} &amp; \beta_0 + \beta_1 \text{South}_i + \sum_{t \neq 2012} \delta_t \,(\text{South}_i \times \text{Year}_t) \\
+&amp; + \beta_2 \text{Dist}_i + \beta_3 (\text{Dist}_i \times \text{South}_i) + X_{it}\gamma + \alpha_b + \lambda_t + \epsilon_{it}
+\end{aligned}
+$$</span></p>
+<ul>
+<li><span class="math" data-tex="\text{South}_i">\(\text{South}_i\)</span> marks counties in the subsidized Zone III.</li>
+<li><span class="math" data-tex="\delta_t">\(\delta_t\)</span> is the treatment effect in each year, relative to 2012.</li>
+<li><span class="math" data-tex="\text{Dist}_i">\(\text{Dist}_i\)</span> is the distance to the policy boundary, allowing the effect to fade away from the border.</li>
+<li><span class="math" data-tex="X_{it}">\(X_{it}\)</span> holds controls for solar radiation, secondary-industry GDP, agricultural land, and terrain.</li>
+</ul>
+<p>We estimated the model with OLS. A Breusch-Pagan test showed heteroskedastic errors, so we used cluster-robust standard errors at the county level; the Durbin-Watson statistic of 2.12 indicated only mild serial correlation.</p>
+<h2>Results</h2>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th style="text-align: right;">Coefficient</th>
+<th style="text-align: right;">Std. error</th>
+<th style="text-align: right;">p-value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>South (baseline)</td>
+<td style="text-align: right;">50.34</td>
+<td style="text-align: right;">15.96</td>
+<td style="text-align: right;">0.002</td>
+</tr>
+<tr>
+<td>South × 2011 (pre-trend)</td>
+<td style="text-align: right;">1.11</td>
+<td style="text-align: right;">2.81</td>
+<td style="text-align: right;">0.963</td>
+</tr>
+<tr>
+<td>South × 2013</td>
+<td style="text-align: right;">−5.70</td>
+<td style="text-align: right;">5.45</td>
+<td style="text-align: right;">0.296</td>
+</tr>
+<tr>
+<td>South × 2014</td>
+<td style="text-align: right;">−11.34</td>
+<td style="text-align: right;">13.76</td>
+<td style="text-align: right;">0.410</td>
+</tr>
+<tr>
+<td>South × 2015</td>
+<td style="text-align: right;">−1.71</td>
+<td style="text-align: right;">15.97</td>
+<td style="text-align: right;">0.915</td>
+</tr>
+<tr>
+<td><strong>South × 2016 (main result)</strong></td>
+<td style="text-align: right;"><strong>68.35</strong></td>
+<td style="text-align: right;"><strong>33.09</strong></td>
+<td style="text-align: right;"><strong>0.039</strong></td>
+</tr>
+<tr>
+<td>Distance × South</td>
+<td style="text-align: right;">−0.65</td>
+<td style="text-align: right;">0.30</td>
+<td style="text-align: right;">0.029</td>
+</tr>
+<tr>
+<td>Agricultural land</td>
+<td style="text-align: right;">0.0006</td>
+<td style="text-align: right;">0.0002</td>
+<td style="text-align: right;">0.003</td>
+</tr>
+<tr>
+<td>Radiation</td>
+<td style="text-align: right;">−8.96</td>
+<td style="text-align: right;">19.45</td>
+<td style="text-align: right;">0.645</td>
+</tr>
+<tr>
+<td>Secondary GDP</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">0.70</td>
+<td style="text-align: right;">0.153</td>
+</tr>
+</tbody>
+</table>
+<p><em>R² = 0.26, with boundary-segment and year fixed effects.</em></p>
+<ul>
+<li><strong>Parallel trends hold.</strong> The pre-policy coefficient is essentially zero (p = 0.963), so the two sides of the border were on the same path before 2013.</li>
+<li><strong>The policy worked, eventually.</strong> By 2016 the subsidized zone had an additional 68.35&nbsp;MW of installed capacity.</li>
+<li><strong>The effect fades with distance.</strong> The negative Distance × South term shows the subsidy mattered most right at the border.</li>
+</ul>
+<h2>What it means</h2>
+<p><strong>A three-year implementation lag.</strong> The tariff was announced in 2013, but capacity only jumped in 2016. That J-curve matches the reality of utility-scale solar: land acquisition, permitting, grid connection, and construction all take time. Policymakers should plan for a gap between creating an incentive and seeing capacity.</p>
+<p><strong>Incentives over geography.</strong> Solar investment should follow sunlight, yet the higher-subsidy zone has <em>lower</em> solar radiation and still drew the investment. Zone III was drawn to compensate for weaker resources, and the roughly $0.10/kWh subsidy difference was enough to override the natural disadvantage.</p>
+<p><strong>Central policy, not local wealth.</strong> Local secondary GDP had no significant effect. In these inland regions, investment came from state-owned enterprises and national energy bureaus chasing the tariff, not from local capital.</p>
+<h2>Read the full paper</h2>
+<object class="pdf-embed" data="../assets/papers/feed-in-tariffs-solar-capacity-china.pdf#view=FitH" type="application/pdf" aria-label="The full paper as a PDF">
+  <p>Your browser can’t show the PDF here. <a href="../assets/papers/feed-in-tariffs-solar-capacity-china.pdf">Download the paper (PDF)</a>.</p>
+</object>
+
+<p><a class="button" href="../assets/papers/feed-in-tariffs-solar-capacity-china.pdf" target="_blank" rel="noopener">Open the PDF <span aria-hidden="true">↗</span></a></p>
+    </article>
+
+    <a class="button button--quiet post__more" href="../writing.html"><span aria-hidden="true">←</span> More writing</a>
+  </main>
+
+<script type="text/markdown" id="post-md">
+*Graduate paper, Rice University Department of Economics. Co-authored with Kanwal Deep Singh and Ty Hampton, under Dr. Tilsa G. Ore Monago.*
+
+## Abstract
+
+This study utilizes a Dynamic Spatial Regression Discontinuity Design (RDD) to evaluate the effectiveness of China’s 2013 Feed-in-Tariff (FIT) policy. Using a balanced panel of 426 county-year observations along the border of Shanxi, Shaanxi, and Inner Mongolia, we exploit the sharp discontinuity in subsidy rates between Zone I and Zone III. Our results confirm that the policy successfully incentivized investment, with the subsidized zone gaining an additional 68.35&nbsp;MW of capacity relative to the control group by 2016. However, the dynamic specification reveals a significant "implementation lag," with no statistical effect observed in the first three years (2013–2015). Furthermore, we find that financial incentives effectively overrode natural disadvantages, as the subsidized zone attracted massive investment despite possessing significantly lower solar radiation levels.
+
+## Research design
+
+China’s 2013 Feed-in-Tariff paid different subsidy rates by zone. Where Zone I meets the higher-subsidy Zone III, neighboring counties faced a sharp jump in incentives, a natural experiment. We used a balanced panel of county-level data from 2011 to 2016 (two years before the policy, four after) and interacted the treatment with year dummies to trace the effect year by year, rather than estimating one static average:
+
+$$
+\begin{aligned}
+\text{Solar}_{it} = {} & \beta_0 + \beta_1 \text{South}_i + \sum_{t \neq 2012} \delta_t \,(\text{South}_i \times \text{Year}_t) \\
+& + \beta_2 \text{Dist}_i + \beta_3 (\text{Dist}_i \times \text{South}_i) + X_{it}\gamma + \alpha_b + \lambda_t + \epsilon_{it}
+\end{aligned}
+$$
+
+- $\text{South}_i$ marks counties in the subsidized Zone III.
+- $\delta_t$ is the treatment effect in each year, relative to 2012.
+- $\text{Dist}_i$ is the distance to the policy boundary, allowing the effect to fade away from the border.
+- $X_{it}$ holds controls for solar radiation, secondary-industry GDP, agricultural land, and terrain.
+
+We estimated the model with OLS. A Breusch-Pagan test showed heteroskedastic errors, so we used cluster-robust standard errors at the county level; the Durbin-Watson statistic of 2.12 indicated only mild serial correlation.
+
+## Results
+
+| Variable | Coefficient | Std. error | p-value |
+| --- | ---: | ---: | ---: |
+| South (baseline) | 50.34 | 15.96 | 0.002 |
+| South × 2011 (pre-trend) | 1.11 | 2.81 | 0.963 |
+| South × 2013 | −5.70 | 5.45 | 0.296 |
+| South × 2014 | −11.34 | 13.76 | 0.410 |
+| South × 2015 | −1.71 | 15.97 | 0.915 |
+| **South × 2016 (main result)** | **68.35** | **33.09** | **0.039** |
+| Distance × South | −0.65 | 0.30 | 0.029 |
+| Agricultural land | 0.0006 | 0.0002 | 0.003 |
+| Radiation | −8.96 | 19.45 | 0.645 |
+| Secondary GDP | 1.00 | 0.70 | 0.153 |
+
+*R² = 0.26, with boundary-segment and year fixed effects.*
+
+- **Parallel trends hold.** The pre-policy coefficient is essentially zero (p = 0.963), so the two sides of the border were on the same path before 2013.
+- **The policy worked, eventually.** By 2016 the subsidized zone had an additional 68.35&nbsp;MW of installed capacity.
+- **The effect fades with distance.** The negative Distance × South term shows the subsidy mattered most right at the border.
+
+## What it means
+
+**A three-year implementation lag.** The tariff was announced in 2013, but capacity only jumped in 2016. That J-curve matches the reality of utility-scale solar: land acquisition, permitting, grid connection, and construction all take time. Policymakers should plan for a gap between creating an incentive and seeing capacity.
+
+**Incentives over geography.** Solar investment should follow sunlight, yet the higher-subsidy zone has *lower* solar radiation and still drew the investment. Zone III was drawn to compensate for weaker resources, and the roughly $0.10/kWh subsidy difference was enough to override the natural disadvantage.
+
+**Central policy, not local wealth.** Local secondary GDP had no significant effect. In these inland regions, investment came from state-owned enterprises and national energy bureaus chasing the tariff, not from local capital.
+
+## Read the full paper
+
+<object class="pdf-embed" data="../assets/papers/feed-in-tariffs-solar-capacity-china.pdf#view=FitH" type="application/pdf" aria-label="The full paper as a PDF">
+  <p>Your browser can’t show the PDF here. <a href="../assets/papers/feed-in-tariffs-solar-capacity-china.pdf">Download the paper (PDF)</a>.</p>
+</object>
+
+<p><a class="button" href="../assets/papers/feed-in-tariffs-solar-capacity-china.pdf" target="_blank" rel="noopener">Open the PDF <span aria-hidden="true">↗</span></a></p>
+
+</script>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p>© <span data-year>2026</span> Pawan Thiruverkadu · <a class="footer__email" href="mailto:pawan@pawanthiruverkadu.com">pawan@pawanthiruverkadu.com</a></p>
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="../">Home</a>
+        <a href="../professional.html">My Experience</a>
+        <a href="../academic.html">Academic</a>
+        <a href="../writing.html">Writing</a>
+        <a href="#main">Back to top</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="post.js" defer></script>
+  <script src="../main.js" defer></script>
+  <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b417369bd2e442e49e68848e48f6c217"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
