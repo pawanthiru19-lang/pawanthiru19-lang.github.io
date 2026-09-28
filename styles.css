@@ -898,8 +898,10 @@ html { scroll-behavior: smooth; }
 .prose p > .button { margin-top: 0; }
 .prose .button { color: var(--on-accent); text-decoration: none; }
 .prose .button:hover { color: var(--bg); }
-.prose .footnotes { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); font-size: 0.9375rem; color: var(--ink-soft); }
+.prose .footnotes, .prose .footnote { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); font-size: 0.9375rem; color: var(--ink-soft); }
 .prose .footnotes h2 { font-size: 1rem; margin-top: 0; }
+.prose .footnote hr { display: none; }
+.prose .footnote ol { padding-left: 1.25rem; }
 .prose sup a { text-decoration: none; font-weight: 700; }
 
 /* --------------------------------------------------------------------------

@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pawan Thiruverkadu · Writing</title>
+    <title>Pawan Thiruverkadu · Reports</title>
     <link>https://pawanthiruverkadu.com/writing.html</link>
     <atom:link href="https://pawanthiruverkadu.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Analysis of the services industry and energy markets by Pawan Thiruverkadu, applying the quantitative toolkit of energy economics.</description>
     <language>en-us</language>
+    <item>
+      <title>Labor as a Growth Limiter for Service-Based Businesses</title>
+      <link>https://pawanthiruverkadu.com/writing/labor-as-a-growth-limiter.html</link>
+      <guid isPermaLink="true">https://pawanthiruverkadu.com/writing/labor-as-a-growth-limiter.html</guid>
+      <pubDate>Sun, 27 Sep 2026 12:00:00 +0000</pubDate>
+      <description>In HVACR services, labor is the product, and it is getting more expensive and harder to find. Why the firms that last will build their technicians instead of recruiting them.</description>
+    </item>
     <item>
       <title>The Dynamic Impact of Feed-in-Tariffs on Solar Capacity</title>
       <link>https://pawanthiruverkadu.com/writing/feed-in-tariffs-solar-capacity.html</link>
