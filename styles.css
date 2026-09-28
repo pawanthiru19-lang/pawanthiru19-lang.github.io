@@ -16,6 +16,7 @@
   --mark: #7fa58a;         /* decorative rules and bullets (never interactive) */
   --on-accent: #ffffff;    /* text on accent buttons */
   --paper-hover: #f1f5ef;
+  --feature-hover: #bdd1b6;
   --header-bg: rgb(232 239 229 / 0.78);
   --logo-plate: transparent;
 
@@ -43,6 +44,7 @@
     --mark: #5f8a6c;
     --on-accent: #10180f;
     --paper-hover: #202c24;
+    --feature-hover: #2a3a2e;
     --header-bg: rgb(20 28 23 / 0.78);
     --logo-plate: #eef3ec;
   }
@@ -292,12 +294,38 @@ img { display: block; max-width: 100%; }
 .hero__initials[hidden] { display: none; }
 
 /* --------------------------------------------------------------------------
+   Latest report (home)
+   -------------------------------------------------------------------------- */
+
+.latest {
+  max-width: calc(var(--page) + var(--gutter) * 2);
+  margin: clamp(4rem, 9vw, 6.5rem) auto 0;
+  padding: 0 var(--gutter);
+}
+.latest__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.latest__head .path__title { margin-bottom: 0; }
+.latest__all { white-space: nowrap; }
+.post-card.post-card--feature {
+  padding: clamp(1.75rem, 4vw, 2.75rem);
+  background: var(--panel);
+}
+.post-card.post-card--feature:hover { background: var(--feature-hover); }
+.post-card.post-card--feature .post-card__tags li { background: var(--surface); }
+.post-card.post-card--feature .post-card__title { font-size: clamp(1.5rem, 3vw, 2.125rem); max-width: 30ch; }
+
+/* --------------------------------------------------------------------------
    Background path
    -------------------------------------------------------------------------- */
 
 .path {
   max-width: calc(var(--page) + var(--gutter) * 2);
-  margin: clamp(4.5rem, 10vw, 7.5rem) auto 0;
+  margin: clamp(4rem, 9vw, 6.5rem) auto 0;
   padding: 0 var(--gutter);
 }
 
