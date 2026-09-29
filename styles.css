@@ -583,6 +583,19 @@ html { scroll-behavior: smooth; }
 .role__project .button--quiet { background: var(--bg); }
 .button--quiet:hover { background: var(--panel); color: var(--ink); }
 
+.personal-note {
+  margin-top: 1.75rem;
+  max-width: 60ch;
+  padding: 1rem 1.25rem;
+  background: var(--surface);
+  border-radius: 0.875rem;
+  color: var(--ink-soft);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+.personal-note strong { color: var(--ink); font-weight: 700; }
+.hero__actions + .personal-note, .personal-note + .hero__actions { margin-top: 1.25rem; }
+
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
@@ -1031,7 +1044,8 @@ html { scroll-behavior: smooth; }
 .hero__lead    { animation: rise 700ms var(--ease-out) 320ms both; }
 .hero__body    { animation: rise 700ms var(--ease-out) 400ms both; }
 .hero .facts   { animation: rise 700ms var(--ease-out) 480ms both; }
-.hero__actions { animation: rise 700ms var(--ease-out) 560ms both; }
+.personal-note { animation: rise 700ms var(--ease-out) 540ms both; }
+.hero__actions { animation: rise 700ms var(--ease-out) 620ms both; }
 .hero__photo::before { animation: panel-in 900ms var(--ease-out) 200ms both; }
 .hero__photo img     { animation: photo-in 1100ms var(--ease-in-out) 120ms both; }
 
